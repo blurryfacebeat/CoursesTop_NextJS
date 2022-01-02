@@ -1,0 +1,18 @@
+.buttonPrimary {
+  background-color: $main-purple;
+  border-width: 0;
+  border-color: transparent;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: $main-purple-hover;
+  }
+
+  &:active {
+    background-color: $main-purple-active;
+  }
+}
+
+.buttonPrimaryText {
+  color: $main-white;
+}

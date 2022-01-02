@@ -21,6 +21,7 @@
         "allowSingleExtends": true
       }
     ],
+    "@typescript-eslint/no-var-requires": ["off"],
     "prettier/prettier": "error"
   },
   "extends": [
