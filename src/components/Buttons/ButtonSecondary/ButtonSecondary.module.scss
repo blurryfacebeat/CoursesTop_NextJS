@@ -1,3 +1,23 @@
+.buttonSecondary {
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $text-secondary;
+  }
+}
+
+.buttonSecondaryActive {
+  border-color: $text-secondary;
+}
+
 .buttonSecondaryText {
   margin-right: 10px;
+}
+
+.arrow {
+  transition: all 0.2s ease;
+}
+
+.activeArrow {
+  transform: rotateZ(90deg);
 }

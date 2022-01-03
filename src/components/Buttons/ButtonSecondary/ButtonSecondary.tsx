@@ -1,20 +1,24 @@
 import React from 'react';
 import { ButtonSecondaryProps } from './ButtonSecondary.types';
 import { Button } from '@/components';
-import ArrowRight from '@/assets/icons/arrow_right.svg';
+import ArrowIcon from '@/assets/icons/arrow_right.svg';
 import styles from './ButtonSecondary.module.scss';
 import cn from 'classnames';
 
 const ButtonSecondary = (props: ButtonSecondaryProps) => {
-  const { children, buttonStyle, textStyle, ...otherProps } = props;
+  const { children, buttonStyle, textStyle, isActive, ...otherProps } = props;
 
   return (
     <Button
-      buttonStyle={buttonStyle}
+      buttonStyle={cn(
+        styles.buttonSecondary,
+        buttonStyle,
+        isActive && styles.buttonSecondaryActive
+      )}
       textStyle={cn(styles.buttonSecondaryText, textStyle)}
       {...otherProps}
     >
-      <ArrowRight />
+      <ArrowIcon className={cn(styles.arrow, isActive && styles.activeArrow)} />
       {children}
     </Button>
   );
