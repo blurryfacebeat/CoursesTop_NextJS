@@ -2,14 +2,15 @@ import React from 'react';
 import { ButtonPrimaryProps } from './ButtonPrimary.types';
 import { Button } from '@/components';
 import styles from './ButtonPrimary.module.scss';
+import cn from 'classnames';
 
 const ButtonPrimary = (props: ButtonPrimaryProps) => {
-  const { children, ...otherProps } = props;
+  const { children, buttonStyle, textStyle, ...otherProps } = props;
 
   return (
     <Button
-      buttonStyle={styles.buttonPrimary}
-      textStyle={styles.buttonPrimaryText}
+      buttonStyle={cn(styles.buttonPrimary, buttonStyle)}
+      textStyle={cn(styles.buttonPrimaryText, textStyle)}
       {...otherProps}
     >
       {children}
