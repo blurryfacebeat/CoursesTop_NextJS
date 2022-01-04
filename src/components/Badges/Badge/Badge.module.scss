@@ -1,0 +1,25 @@
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+
+  border: 1px solid $background-light-grey;
+  border-radius: 20px;
+  background-color: $main-white;
+}
+
+.badgeText {
+  color: $text-main;
+  font-size: 12px;
+}
+
+.small {
+  font-weight: 500;
+}
+
+.medium {
+  font-weight: 600;
+}
+
+.big {
+  font-weight: 700;
+}
