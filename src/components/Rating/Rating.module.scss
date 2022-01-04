@@ -1,0 +1,13 @@
+.filled svg {
+  fill: $main-purple;
+}
+
+.star svg {
+  margin-right: 5px;
+
+  transition: all 0.1s ease;
+}
+
+.editable {
+  cursor: pointer;
+}
