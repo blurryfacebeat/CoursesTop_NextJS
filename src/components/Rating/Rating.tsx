@@ -66,7 +66,7 @@ const Rating = (props: RatingProps) => {
   };
 
   return (
-    <div className={cn(className)} {...otherProps}>
+    <div className={cn(styles.container, className)} {...otherProps}>
       {ratingArray.map((rating: JSX.Element, idx: number) => (
         <span key={idx}>{rating}</span>
       ))}

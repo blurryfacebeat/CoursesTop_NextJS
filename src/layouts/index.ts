@@ -1,0 +1,1 @@
+export { withMainLayout } from './MainLayout';

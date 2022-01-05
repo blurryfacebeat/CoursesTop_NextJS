@@ -2,9 +2,13 @@
   fill: $main-purple;
 }
 
-.star svg {
-  margin-right: 5px;
+.container {
+  display: inline-flex;
+  align-items: center;
+  grid-gap: 5px;
+}
 
+.star svg {
   transition: all 0.1s ease;
 }
 

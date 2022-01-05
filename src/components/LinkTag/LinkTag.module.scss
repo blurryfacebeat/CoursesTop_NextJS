@@ -1,0 +1,20 @@
+.link {
+  color: $main-white;
+  transition: all 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.small {
+  font-size: 14px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.big {
+  font-size: 18px;
+}
