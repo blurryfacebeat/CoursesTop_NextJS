@@ -1,8 +1,10 @@
 .buttonSecondary {
   transition: all 0.2s ease;
 
-  &:hover {
-    border-color: $text-secondary;
+  @media (hover: hover) {
+    &:hover {
+      border-color: $text-secondary;
+    }
   }
 }
 

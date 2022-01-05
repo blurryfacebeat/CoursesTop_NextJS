@@ -2,8 +2,14 @@
   color: $main-white;
   transition: all 0.2s ease;
 
-  &:hover {
-    opacity: 0.9;
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }
 

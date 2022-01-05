@@ -10,10 +10,10 @@ const MainLayout = (props: MainLayoutProps) => {
 
   return (
     <div className={styles.wrapper}>
-      <Header />
-      <Sidebar />
-      <main>{children}</main>
-      <Footer />
+      <Header className={styles.header} />
+      <Sidebar className={styles.sidebar} />
+      <main className={styles.main}>{children}</main>
+      <Footer className={styles.footer} />
     </div>
   );
 };
