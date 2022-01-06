@@ -18,7 +18,7 @@ const MainLayout = (props: MainLayoutProps) => {
   );
 };
 
-const withMainLayout = <T extends `Record<string, unknown>`>(
+const withMainLayout = <T extends Record<string, unknown>>(
   Component: FunctionComponent<T>
 ) => {
   return function withMainLayoutComponent(props: T) {

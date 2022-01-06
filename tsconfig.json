@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
@@ -15,9 +15,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "DOM",
+      "DOM.iterable",
+      "esnext",
+      "es2019"
     ],
     "incremental": true,
     "baseUrl": ".",
