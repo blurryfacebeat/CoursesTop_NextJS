@@ -4,6 +4,7 @@ import styles from './MainLayout.module.scss';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { Sidebar } from './Sidebar';
+import { AppContextProvider, IAppContext } from '@/context';
 
 const MainLayout = (props: MainLayoutProps) => {
   const { children } = props;
@@ -18,14 +19,16 @@ const MainLayout = (props: MainLayoutProps) => {
   );
 };
 
-const withMainLayout = <T extends Record<string, unknown>>(
+const withMainLayout = <T extends Record<string, unknown> & IAppContext>(
   Component: FunctionComponent<T>
 ) => {
   return function withMainLayoutComponent(props: T) {
     return (
-      <MainLayout>
-        <Component {...props} />
-      </MainLayout>
+      <AppContextProvider menu={props.menu} firstCategory={props.firstCategory}>
+        <MainLayout>
+          <Component {...props} />
+        </MainLayout>
+      </AppContextProvider>
     );
   };
 };
