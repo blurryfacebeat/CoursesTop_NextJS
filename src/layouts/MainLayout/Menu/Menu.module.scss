@@ -1,0 +1,55 @@
+.firstLevelLinkContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.firstLevelLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.firstLevelLinkName {
+  font-size: 18px;
+  color: $text-secondary;
+}
+
+.firstLevelLinkIcon {
+  margin-right: 20px;
+}
+
+.secondLevel {
+  display: inline-block;
+  margin-bottom: 15px;
+
+  font-size: 12px;
+  font-weight: 300;
+  color: $text-secondary;
+  text-transform: uppercase;
+}
+
+.secondLevelContainer {
+  margin: 0 0 20px 10px;
+  padding: 0 0 0 35px;
+  position: relative;
+
+  border-left: 1px solid $background-line-grey;
+}
+
+.thirdLevel {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: $text-secondary;
+}
+
+.thirdLevelActive {
+  color: $main-purple;
+}
+
+.thirdLevelContainer {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
