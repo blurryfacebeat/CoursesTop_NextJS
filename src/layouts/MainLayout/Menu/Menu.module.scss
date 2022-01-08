@@ -7,6 +7,39 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+
+  transition: all 0.2s ease;
+
+  span {
+    transition: all 0.2s ease;
+  }
+
+  svg {
+    transition: all 0.2s ease;
+  }
+
+  @media (hover: hover) {
+
+    &:hover {
+      span {
+        color: $main-purple;
+      }
+
+      svg {
+        fill: $main-purple;
+      }
+    }
+  }
+}
+
+.firstLevelLinkActive {
+  span {
+    color: $main-purple;
+  }
+
+  svg {
+    fill: $main-purple;
+  }
 }
 
 .firstLevelLinkName {
@@ -26,6 +59,8 @@
   font-weight: 300;
   color: $text-secondary;
   text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 .secondLevelContainer {
@@ -36,6 +71,14 @@
   border-left: 1px solid $background-line-grey;
 }
 
+.secondLevelBlock {
+  display: none;
+}
+
+.secondLevelBlockOpened {
+  display: block;
+}
+
 .thirdLevel {
   display: inline-block;
   margin-bottom: 10px;
@@ -43,6 +86,14 @@
   font-size: 14px;
   font-weight: 500;
   color: $text-secondary;
+
+  transition: all 0.2s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $main-purple;
+    }
+  }
 }
 
 .thirdLevelActive {
